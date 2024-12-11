@@ -1,0 +1,52 @@
+.speicals_offers {
+    font-family: var(--font-family);
+    background-color: #f6f7fb;
+    color: var(--color-almost-black);
+}
+
+.offers_wrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.offers_head-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-text {
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.head_text-link {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.svg_arrow {
+    width: 10px;
+    height: 18px;
+    color: var(--color-svg);
+}
+
+.svg_icon {
+    width: 100%;
+    height: 100%;
+}
+
+.offers_slider {
+    display: flex;
+}
+
+.offer {
+    padding: 50px 30px 10px 40px;
+    height: 610px;
+    flex: 1 1 420px;
+}
+
+.offer-smartphone {
+    background: linear-gradient(153deg, rgba(56, 95, 223, 0.1) 0%, rgba(40, 203, 51, 0.1) 100%);
+}

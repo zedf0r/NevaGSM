@@ -13,7 +13,7 @@
 }
 
 .container {
-    padding: 15px 16%;
+    padding: 15px;
 }
 
 .menu {
@@ -48,22 +48,7 @@
     height: 16px;
 }
 
-.svg_home, 
-.svg_clock, 
-.svg_telephone, 
-.svg_search,
-.svg_user,
-.svg_link,
-.svg_favorite,
-.svg_cart,
-.svg_smartphone,
-.svg_tablet,
-.svg_smart-watch,
-.svg_audio,
-.svg_notebook,
-.svg_game-console,
-.svg_TV,
-.svg_accessories {
+.icon_svg {
     width: 100%;
     height: 100%;
 }
@@ -214,7 +199,7 @@
 }
 
 .categories_list {
-    color: var(--color-black);
+    color: var(--color-almost-black);
     display: flex;
     width: 100%;
     justify-content: space-between;

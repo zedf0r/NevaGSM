@@ -10,6 +10,11 @@
 @use "./components/template/main" as *;
 @use "./components/template/footer" as *;
 
+//Screen
+@use "./components/screen/head_specials" as *;
+@use "./components/screen/new_gadget" as *;
+@use "./components/screen/specials" as *;
+
 // Components
 @use "./components/container" as *;
 @use "./components/flexbox" as *;

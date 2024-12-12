@@ -1,0 +1,202 @@
+.categories {
+    font-family: var(--font-family);
+    color: var(--color-almost-black);
+}
+
+.categories-container {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.categories-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.categories_text-head {
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.head_text-link {
+    font-weight: 500;
+}
+
+.text_link-hover {
+    transition: .5s;
+}
+
+.head_text-link:hover .text_link-hover {
+    margin-right: 10px;
+}
+
+.categories-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.categories-first-box {
+    display: flex;
+    column-gap: 20px;
+    height: 387px;
+}
+
+.category-first {
+    flex: 0 1 33%;
+}
+
+.category {
+    background-color: #f3f4fb;
+    display: flex;
+    align-items: end;
+    padding: 0 0 42px 35px;
+    gap: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    position: relative;
+    overflow: hidden;
+}
+
+.category:hover {
+    .category-svg_arrow {
+        margin-left: 10px;
+    }
+    .first-telephone-img {
+        width: 195px;
+        height: 396px;
+        bottom: -40px;
+        right: 10px;
+    }
+    .second-telephone-img  {
+        width: 188px;
+        height: 378px;
+    }
+    .tablet-img {
+        width: 200px;
+        height: 320px;
+    }
+    .smart-watch-img {
+        transform: rotate(45deg);
+        right: -70px;
+        width: 308px;
+        height: 390px;
+    }
+    .audio-img {
+        width: 321px;
+        height: 171px;
+    }
+    .notebook-img {
+        right: -40px;
+    }
+    .controller-img {
+        transform: rotate(18deg);
+        top: -10px;
+        right: -40px;
+    }
+    .accessories-img {
+        width: 170px;
+        transform: rotate(-30deg);
+    }
+    .TV-img {
+        right: -10px;
+    }
+}
+
+.categories-second-box {
+    display: flex;
+    column-gap: 20px;
+    height: 250px;
+}
+
+.category-svg_arrow {
+    margin-bottom: 7px;
+}
+
+.category-second {
+    flex: 0 1 25%
+}
+
+.categories-last-box {
+    display: flex;
+    column-gap: 20px;
+    height: 320px;
+}
+
+.category-last {
+    flex: 0 1 50%;
+}
+
+.category-img {
+    position: absolute;
+    transition: .8s;
+    right: 0;
+}
+
+.first-telephone-img {
+    bottom: -60px;
+    right: -30px;
+    width: 179px;
+    height: 362px;
+}
+
+.second-telephone-img {
+    bottom: -100px;
+    right: -80px;
+    width: 172px;
+    height: 345px;
+}
+
+.tablet-img {
+    width: 171px;
+    height: 282px;
+}
+
+.smart-watch-img {
+    width: 287px;
+    height: 357px;
+    top: 20px;
+    right: -130px;
+}
+
+.audio-img {
+    width: 283px;
+    height: 159px;
+    right: -90px;
+    top: 20px;
+}
+
+.notebook-img {
+    top: -20px;
+    right: -90px;
+}
+
+.controller-img {
+    width: 225px;
+    right: -75px;
+    top: -20px;
+}
+
+.accessories-img {
+    width: 134px;
+    right: -20px;
+    bottom: -50px;
+}
+
+.fan-img {
+    bottom: -200px;
+    right: -10px;
+}
+
+.TV-img {
+    bottom: -40px;
+    right: -100px;
+}
+
+.categories-img {
+    width: 100%;
+    height: 100%;
+}

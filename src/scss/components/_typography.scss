@@ -1,0 +1,21 @@
+@use "./params" as *;
+
+@each $header, $styles in $header-styles-mobile {
+	#{$header},
+	.#{$header} {
+		font-size: #{$styles}px;
+		margin: 0;
+		overflow-wrap: break-word;
+	}
+}
+
+@media (min-width: 768px) {
+	@each $header, $styles in $header-styles-desktop {
+		#{$header},
+		.#{$header} {
+			font-size: #{$styles}px;
+			margin: 0;
+			overflow-wrap: break-word;
+		}
+	}
+}

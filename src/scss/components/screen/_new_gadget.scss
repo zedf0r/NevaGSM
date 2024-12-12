@@ -1,0 +1,92 @@
+.new-gadgets {
+    padding-top: 30px;
+    font-family: var(--font-family);
+}
+
+.new_gadgets-wrapper {
+    display: flex;
+    column-gap: 30px;
+}
+
+.gadget {
+    background-color: #f3f4fb;
+    flex: 0 1 33%;
+    height: 492px;
+    display: flex;
+    padding: 91px 52px 5px 55px;
+    position: relative;
+}
+
+.gadget-first {
+    justify-content: flex-end;
+}
+
+.gadget-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.gadget-new {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    flex: 0 0 23px;
+    padding: 3px 10px;
+    width: 75px;
+    border-radius: 3px;
+}
+
+.gadget-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    color: var(--color-almost-black);
+}
+
+.gadget_text-head {
+    font-weight: 900;
+    font-size: 38px;
+}
+
+.text-detail {
+    display: block;
+}
+
+.text-detail-second {
+    margin-top: 5px;
+}
+
+.gadget_text-link {
+    margin-top: 10px;
+    display: flex;
+    column-gap: 30px;
+}
+
+.svg_arrow {
+    transition: .5s;
+}
+
+.gadget_text-link:hover .svg_arrow {
+    margin-left: 10px;
+}
+
+.gadget-img {
+    position: absolute;
+    bottom: 0;
+}
+
+.gadget-img-airpods {
+    left: 200px;
+}
+
+.gadget-img-iphone {
+    left: 290px;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}

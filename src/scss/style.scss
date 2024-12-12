@@ -1,0 +1,21 @@
+@use "./components/params" as *;
+@use "./components/fonts" as *;
+@use "./components/typography" as *;
+
+// Layout
+@use "./components/layout/home" as *;
+
+// Template
+@use "./components/template/header" as *;
+@use "./components/template/main" as *;
+@use "./components/template/footer" as *;
+
+//Screen
+@use "./components/screen/head_specials" as *;
+@use "./components/screen/new_gadget" as *;
+@use "./components/screen/categories" as *;
+@use "./components/screen/specials" as *;
+
+// Components
+@use "./components/container" as *;
+@use "./components/flexbox" as *;

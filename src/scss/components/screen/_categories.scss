@@ -7,102 +7,82 @@
     padding-top: 80px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-}
-
-.categories-text {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.categories_text-head {
-    font-weight: 900;
-    font-size: 32px;
-}
-
-.head_text-link {
-    font-weight: 500;
-}
-
-.text_link-hover {
-    transition: .5s;
-}
-
-.head_text-link:hover .text_link-hover {
-    margin-right: 10px;
+    margin-bottom: 60px;
 }
 
 .categories-wrapper {
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 20px;
+
+    a {
+        background-color: #f3f4fb;
+        display: flex;
+        align-items: end;
+        padding: 0 0 42px 35px;
+        gap: 20px;    
+        position: relative;
+        overflow: hidden;
+        span {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        
+        div {
+            margin-bottom: 4px;
+        }
+
+        &:hover {
+            div {
+                margin-left: 10px;
+            }
+            .first-telephone-img {
+                width: 195px;
+                bottom: -40px;
+                right: 10px;
+            }
+            .second-telephone-img  {
+                width: 188px;
+            }
+            .tablet-img {
+                width: 460px;
+                right: -255px;
+                bottom: 50px;
+            }
+            .smart-watch-img {
+                transform: rotate(45deg);
+                right: -70px;
+                width: 308px;
+            }
+            .audio-img {
+                width: 321px;
+            }
+            .notebook-img {
+                right: -40px;
+            }
+            .controller-img {
+                transform: rotate(18deg);
+                top: -10px;
+                right: -40px;
+            }
+            .accessories-img {
+                width: 170px;
+                transform: rotate(-30deg);
+            }
+            .TV-img {
+                right: -10px;
+            }
+        }
+    }
 }
 
 .categories-first-box {
     display: flex;
     column-gap: 20px;
     height: 387px;
-}
 
-.category-first {
-    flex: 0 1 33%;
-}
-
-.category {
-    background-color: #f3f4fb;
-    display: flex;
-    align-items: end;
-    padding: 0 0 42px 35px;
-    gap: 20px;
-    font-size: 24px;
-    font-weight: 700;
-    position: relative;
-    overflow: hidden;
-}
-
-.category:hover {
-    .category-svg_arrow {
-        margin-left: 10px;
-    }
-    .first-telephone-img {
-        width: 195px;
-        height: 396px;
-        bottom: -40px;
-        right: 10px;
-    }
-    .second-telephone-img  {
-        width: 188px;
-        height: 378px;
-    }
-    .tablet-img {
-        width: 200px;
-        height: 320px;
-    }
-    .smart-watch-img {
-        transform: rotate(45deg);
-        right: -70px;
-        width: 308px;
-        height: 390px;
-    }
-    .audio-img {
-        width: 321px;
-        height: 171px;
-    }
-    .notebook-img {
-        right: -40px;
-    }
-    .controller-img {
-        transform: rotate(18deg);
-        top: -10px;
-        right: -40px;
-    }
-    .accessories-img {
-        width: 170px;
-        transform: rotate(-30deg);
-    }
-    .TV-img {
-        right: -10px;
+    a {
+        flex: 0 1 33%;
     }
 }
 
@@ -110,24 +90,20 @@
     display: flex;
     column-gap: 20px;
     height: 250px;
-}
 
-.category-svg_arrow {
-    margin-bottom: 7px;
-}
-
-.category-second {
-    flex: 0 1 25%
+    a {
+        flex: 0 1 25%
+    }
 }
 
 .categories-last-box {
     display: flex;
     column-gap: 20px;
     height: 320px;
-}
 
-.category-last {
-    flex: 0 1 50%;
+    a {
+        flex: 0 1 50%;
+    }
 }
 
 .category-img {
@@ -140,31 +116,28 @@
     bottom: -60px;
     right: -30px;
     width: 179px;
-    height: 362px;
 }
 
 .second-telephone-img {
     bottom: -100px;
     right: -80px;
     width: 172px;
-    height: 345px;
 }
 
 .tablet-img {
-    width: 171px;
-    height: 282px;
+    width: 399px;
+    right: -225px;
+    bottom: 50px;
 }
 
 .smart-watch-img {
     width: 287px;
-    height: 357px;
     top: 20px;
     right: -130px;
 }
 
 .audio-img {
     width: 283px;
-    height: 159px;
     right: -90px;
     top: 20px;
 }
@@ -189,14 +162,292 @@
 .fan-img {
     bottom: -200px;
     right: -10px;
+    width: 344px;
 }
 
 .TV-img {
     bottom: -40px;
     right: -100px;
+    width: 290px;
 }
 
-.categories-img {
-    width: 100%;
-    height: 100%;
+@media (max-width: 1400px) {
+    .categories-first-box {
+        flex-wrap: wrap;
+        row-gap: 20px;
+        justify-content: space-between;
+        a {
+            flex: 0 1 calc(50% - 15px);
+
+            &:last-child {
+                flex: 0 1 100%;
+                align-items: center;
+                padding-bottom: 0;
+
+                div {
+                    margin-bottom: 0;
+                }
+            }
+            &:hover {
+                div {
+                    margin-left: 10px;
+                }
+                .first-telephone-img {
+                    width: 120px;
+                    bottom: -50px;
+                    right: 30px;
+                }
+                .second-telephone-img  {
+                    width: 115px;
+                }
+
+                .tablet-img {
+                    width: 280px;
+                    right: -100px;
+                    bottom: 0;
+                }
+                .smart-watch-img {
+                    right: -70px;
+                    width: 230px;
+                }
+                
+            }
+        }
+    }
+
+    .categories-second-box {
+        flex-wrap: wrap;
+        row-gap: 20px;
+        justify-content: space-between;
+        height: 428px;
+
+        a {
+            flex: 0 1 calc(50% - 15px);
+            height: 204px;
+        }
+    }
+
+    .categories-last-box {
+        flex-wrap: wrap;
+        row-gap: 20px;
+        height: 428px;
+        a {
+            flex: 0 1 100%;
+            height: 204px;
+            align-items: center;
+            padding-bottom: 0;
+            div {
+                margin-bottom: 0;
+            }
+
+            &:hover {
+                .TV-img {
+                    right: -10px;
+                }
+            }
+        }
+    }
+
+    .smart-watch-img {
+        width: 197px;
+        top: -30px;
+        right: -50px;
+    }
+
+    .first-telephone-img {
+        width: 110px;
+        bottom: -50px;
+        right: 30px;
+    }
+
+    .second-telephone-img {
+        bottom: -70px;
+        right: 0;
+        width: 105px;
+    }
+
+    .tablet-img {
+        width: 190px;
+        right: -80px;
+        bottom: 0;
+    }
+
+    .audio-img {
+        width: 283px;
+        right: -50px;
+        top: 20px;
+    }
+    
+    .notebook-img {
+        top: -20px;
+        right: -65px;
+    }
+    
+    .controller-img {
+        width: 225px;
+        right: -35px;
+        top: -20px;
+    }
+
+    .accessories-img {
+        width: 134px;
+        right: 0;
+        bottom: -50px;
+    }
+
+    .fan-img {
+        bottom: -75px;
+        right: -10px;
+        width: 204px;
+    }
+
+    .TV-img {
+        bottom: 0;
+        right: -5px;
+        width: 150px;
+    }
 }
+
+@media (max-width: 800px) {
+
+    .categories-first-box {
+        height: 460px;
+
+        a {
+            flex: 0 1 100%;
+            height: 140px;
+            align-items: center;
+            padding-bottom: 0;
+
+            div {
+                margin-bottom: 0;
+            }
+
+            &:hover {
+                .first-telephone-img {
+                    width: 80px;
+                    bottom: -50px;
+                    right: 50px;
+                }
+            
+                .second-telephone-img {
+                    bottom: -70px;
+                    right: 20px;
+                    width: 80px;
+                }
+
+                .tablet-img {
+                    width: 190px;
+                    right: -80px;
+                    bottom: 0;
+                }
+
+                .smart-watch-img {
+                    width: 147px;
+                    top: -5px;
+                    right: -30px;
+                    transform: rotate(0);
+                }
+            }
+        }
+    }
+
+    .categories-second-box {
+        height: 620px;
+        a {
+            flex: 0 1 100%;
+            height: 140px;
+            align-items: center;
+            padding-bottom: 0;
+
+            div {
+                margin-bottom: 0;
+            }
+
+            &:hover {
+                .audio-img {
+                    width: 223px;
+                    right: -30px;
+                    top: 0;
+                }
+
+                .notebook-img {
+                    width: 204px;
+                    right: -50px;
+                    top: -30px;
+                }
+
+                .accessories-img {
+                    width: 105px;
+                    right: 20px;
+                    bottom: -50px;
+                    transform: rotate(0);
+                }
+
+                .controller-img {
+                    width: 185px;
+                    right: -35px;
+                    top: -20px;
+                    transform: rotate(0);
+                }
+            }
+        }
+    }
+
+    .categories-last-box {
+        a {
+
+            &:hover {
+                .TV-img {
+                    bottom: 0;
+                    right: -5px;
+                    width: 150px;
+                }
+            }
+            
+        }
+    }
+
+    .first-telephone-img {
+        width: 80px;
+        bottom: -50px;
+        right: 50px;
+    }
+
+    .second-telephone-img {
+        bottom: -70px;
+        right: 20px;
+        width: 80px;
+    }
+
+    .smart-watch-img {
+        width: 147px;
+        top: -5px;
+        right: -30px;
+    }
+
+    .audio-img {
+        width: 223px;
+        right: -30px;
+        top: 0;
+    }
+    
+    .notebook-img {
+        width: 204px;
+        right: -50px;
+        top: -30px;
+    }
+    
+    .controller-img {
+        width: 185px;
+        right: -35px;
+        top: -20px;
+    }
+    
+    .accessories-img {
+        width: 105px;
+        right: 20px;
+        bottom: -50px;
+    }
+}
+

@@ -7,7 +7,6 @@
 	--color-black: #000;
 	--color-almost-black: #050708;
 	--font-family: "SF UI Display", sans-serif;
-	--color-svg: #385FDF;
 }
 
 * {
@@ -25,6 +24,11 @@
 	&::before {
 		box-sizing: border-box;
 	}
+}
+
+svg, img {
+	width: 100%;
+	height: 100%;
 }
 
 $screen-layout-flexbox: (

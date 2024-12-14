@@ -1,8 +1,7 @@
 .footer {
     background-color: #f0f2f5;
-    padding: 20px 0;
+    padding-top: 20px;
     font-family: var(--font-family);
-    font-weight: 400;
 }
 
 .footer_wrap {
@@ -22,6 +21,10 @@
     row-gap: 20px;
     flex: 0 1 471px;
     position: relative;
+
+    a {
+        font-weight: 400;
+    }
 }
 
 .footer_contacts::after {
@@ -38,25 +41,30 @@
 .contact_information {
     display: flex;
     gap: 10px;
-    font-weight: 500;
 }
 
 .contacts {
     display: flex;
     flex-direction: column;
     gap: 30px;
+
+    span {
+        font-weight: 500;
+    }
 }
 
 .footer_contact-svg {
-    color: var(--color-svg);
+    color: var(--bg-color-blue);
     width: 16px;
     height: 16px;
 }
 
 .alert {
-    font-weight: 200;
-    font-size: 14px;
-    line-height: 18px;
+    span {
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 18px;
+    }
 }
 
 .footer_menu {
@@ -71,17 +79,26 @@
     display: flex;
     flex-direction: column;
     row-gap: 15px;
+    
+    h3 {
+        font-weight: 300;
+        font-size: 24px;
+        color: var(--color-input);
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        flex-wrap: wrap;
+    }
 }
 
-.menu_box-text {
-    font-weight: 300;
-    font-size: 24px;
-    color: var(--color-input);
-}
-
-.menu_box-flex {
-    display: flex;
-    gap: 40px;
+.catalog {
+    div {
+        display: flex;
+        gap: 40px;
+    }
 }
 
 .footer_svg-box {
@@ -89,22 +106,51 @@
     height: 20px;
 }
 
-.menu_box_list_item-link {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
-.menu_box-list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 15px;
-    flex-wrap: wrap;
+.useful-links {
+    a {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
 }
 
 .copyright {
     background-color: var(--color-almost-black);
     height: 59px;
-    color: #9496a3;
     padding-top: 5px;
+
+    span {
+        color: #9496a3;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 1400px) {
+    .footer_contacts::after {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer {
+        padding-top: 10px;
+    }
+
+    .footer_wrap {
+        flex-direction: column-reverse;
+        row-gap: 40px;
+    }
+    
+    .footer_contacts {
+        flex: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer_menu {
+        row-gap: 40px;
+        flex-direction: column;
+        flex: none;
+        max-height: none;
+    }
 }

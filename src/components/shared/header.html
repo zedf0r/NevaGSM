@@ -1,38 +1,40 @@
 <header class="header">
   <div class="header-menu">
-    <div class="container">
-      <nav class="menu">
-        <ul class="menu_list">
-          <li class="list_item item_svg">
-            <a href="#" class="item_link">
-              <svg class="icon_svg">
-                <use xlink:href="./img/sprite.svg#home" />
-              </svg>
-            </a>
+    <div class="container header-container">
+      <nav>
+        <ul>
+          <li>
+            <div>
+              <a href="#">
+                <svg>
+                  <use xlink:href="./img/sprite.svg#home" />
+                </svg>
+              </a>
+            </div>
           </li>
-          <li class="list_item">
-            <a href="#" class="item_link">О компании</a>
+          <li>
+            <a href="#">О компании</a>
           </li>
-          <li class="list_item">
-            <a href="#" class="item_link">Доставка и оплата</a>
+          <li>
+            <a href="#">Доставка и оплата</a>
           </li>
-          <li class="list_item"><a href="#" class="item_link">Гарантия</a></li>
-          <li class="list_item"><a href="#" class="item_link">В кредит</a></li>
-          <li class="list_item"><a href="#" class="item_link">Trade in</a></li>
-          <li class="list_item"><a href="#" class="item_link">Контакты</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">В кредит</a></li>
+          <li><a href="#">Trade in</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
-        <ul class="menu_list">
-          <li class="contact_item item_before">
-            <div class="item_svg svg_margin">
-              <svg class="icon_svg">
+        <ul>
+          <li>
+            <div>
+              <svg>
                 <use xlink:href="./img/sprite.svg#clock" />
               </svg>
             </div>
             <p>Ежедневно с 8:00 до 21:00</p>
           </li>
-          <li class="contact_item">
-            <div class="item_svg svg_margin">
-              <svg class="icon_svg">
+          <li>
+            <div>
+              <svg>
                 <use xlink:href="./img/sprite.svg#telephone" />
               </svg>
             </div>
@@ -43,158 +45,176 @@
     </div>
   </div>
   <div class="header-navbar">
-    <div class="container">
-      <div class="wrap">
-        <div class="navbar_logo">
-          <svg class="logo_svg"><use xlink:href="./img/sprite.svg#logo" /></svg>
-        </div>
-        <div class="navbar_catalog">
-          <a href="#" class="catalog_btn" >
-            <div class="btn_svg">
-              <svg class="svg_square">
+    <div class="container navbar-container">
+      <ul>
+        <li class="navbar_logo">
+          <svg><use xlink:href="./img/sprite.svg#logo" /></svg>
+        </li>
+        <li class="navbar_catalog">
+          <a href="#">
+            <div>
+              <svg>
                 <use xlink:href="./img/sprite.svg#btn_square" />
               </svg>
             </div>
             Каталог товаров
           </a>
-        </div>
-        <div class="navbar_search">
-          <input type="text" class="search" placeholder="Что вы ищите?" />
-          <div class="lens">
-            <svg class="icon_svg">
+        </li>
+        <li class="navbar_search">
+          <input type="text" placeholder="Что вы ищите?" />
+          <div>
+            <svg>
               <use xlink:href="./img/sprite.svg#search" />
             </svg>
           </div>
-        </div>
-        <div class="navbar_icons">
-          <div class="icons_svg">
+        </li>
+        <li class="navbar_icons">
+          <div>
             <a href="#">
-              <svg class="icon_svg">
+              <svg>
                 <use xlink:href="./img/sprite.svg#person" />
               </svg>
             </a>
           </div>
-          <div class="icons_svg">
+          <div>
             <a href="#">
-              <svg class="icon_svg">
+              <svg>
                 <use xlink:href="./img/sprite.svg#compare" />
               </svg>
             </a>
           </div>
-          <div class="icons_svg">
+          <div>
             <a href="#">
-              <svg class="icon_svg">
+              <svg>
                 <use xlink:href="./img/sprite.svg#heart" />
               </svg>
             </a>
           </div>
-          <div class="icons_svg">
-            <a href="#" class="icons_svg-link">
-              <div class="cart-svg">
-                <svg class="icon_svg">
+          <div class="icons_svg-link">
+            <a href="#">
+              <div>
+                <svg>
                   <use xlink:href="./img/sprite.svg#cart" />
                 </svg>
               </div>
-              <span class="cart_bg-count">2</span>
-              <span class="cart_count">58 589₽</span>
+              <p>2</p>
+              <span>58 589₽</span>
             </a>
           </div>
-        </div>
-      </div>
+        </li>
+        <li class="mobile_navbar">
+          <div class="mobile_navbar-icon">
+            <button type="button">
+              <div>
+                <svg>
+                  <use xlink:href="./img/sprite.svg#search" />
+                </svg>
+              </div>
+            </button>
+            <button class="burger" type="button">
+              <div class="menu_burger burger-first"></div>
+              <div class="menu_burger burger-second"></div>
+              <div class="menu_burger burger-last"></div>
+            </button>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
   <div class="categories">
     <div class="container">
-      <ul class="categories_list">
-        <li class="categories_list_item">
-          <a href="#" class="categories_link">
-            <div class="item_svg-smartphone">
-              <svg class="icon_svg">
-                <use xlink:href="./img/sprite.svg#smartphone" />
-              </svg>
-            </div>
-            <span>Телефоны</span>
-          </a>
-        </li>
-        <li class="categories_list_item">
-          <a href="#" class="categories_link">
-            <div class="item_svg-tablet">
-              <svg class="icon_svg">
-                <use xlink:href="./img/sprite.svg#tablet" />
-              </svg>
-            </div>
-            <span>Планшеты</span>
-          </a>
-        </li>
-        <li class="categories_list_item">
-          <a href="#" class="categories_link">
-            <div class="item_svg-smart-watch">
-              <svg class="icon_svg">
-                <use xlink:href="./img/sprite.svg#smart-watch" />
-              </svg>
-            </div>
-            <span>Часы</span>
-          </a>
-        </li>
-        <li class="categories_list_item">
-          <a href="#" class="categories_link">
-            <div class="item_svg-audio">
-              <svg class="icon_svg">
-                <use xlink:href="./img/sprite.svg#audio" />
-              </svg>
-            </div>
-            <span>Аудио</span>
-          </a>
-        </li>
-        <li class="categories_list_item">
-          <a href="#" class="categories_link">
-            <div class="item_svg-notebook">
-              <svg class="icon_svg">
-                <use xlink:href="./img/sprite.svg#notebook" />
-              </svg>
-            </div>
-            <span>Ноутбуки</span>
-          </a>
-        </li>
-        <li class="categories_list_item">
-          <a href="#" class="categories_link">
-            <div class="item_svg-game-console">
-              <svg class="icon_svg">
-                <use xlink:href="./img/sprite.svg#game-console" />
-              </svg>
-            </div>
-            <span>Приставки</span>
-          </a>
-        </li>
-        <li class="categories_list_item">
-          <a href="#" class="categories_link">
-            <div class="item_svg-home">
-              <svg class="icon_svg">
-                <use xlink:href="./img/sprite.svg#category-home" />
-              </svg>
-            </div>
-            <span>Для дома</span>
-          </a>
-        </li>
-        <li class="categories_list_item">
-          <a href="#" class="categories_link">
-            <div class="item_svg-TV">
-              <svg class="icon_svg"><use xlink:href="./img/sprite.svg#TV" /></svg>
-            </div>
-            <span>Телевизоры</span>
-          </a>
-        </li>
-        <li class="categories_list_item">
-          <a href="#" class="categories_link">
-            <div class="item_svg-accessories">
-              <svg class="icon_svg">
-                <use xlink:href="./img/sprite.svg#accessories" />
-              </svg>
-            </div>
-            <span>Аксессуары</span>
-          </a>
-        </li>
-      </ul>
+      <div class="swiper" id="categories-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#">
+              <div class="svg-smartphone">
+                <svg>
+                  <use xlink:href="./img/sprite.svg#smartphone" />
+                </svg>
+              </div>
+              <span>Телефоны</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <div class="svg-tablet">
+                <svg>
+                  <use xlink:href="./img/sprite.svg#tablet" />
+                </svg>
+              </div>
+              <span>Планшеты</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <div class="svg-smart-watch">
+                <svg>
+                  <use xlink:href="./img/sprite.svg#smart-watch" />
+                </svg>
+              </div>
+              <span>Часы</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <div class="svg-audio">
+                <svg>
+                  <use xlink:href="./img/sprite.svg#audio" />
+                </svg>
+              </div>
+              <span>Аудио</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <div class="svg-notebook">
+                <svg>
+                  <use xlink:href="./img/sprite.svg#notebook" />
+                </svg>
+              </div>
+              <span>Ноутбуки</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <div class="svg-game-console">
+                <svg>
+                  <use xlink:href="./img/sprite.svg#game-console" />
+                </svg>
+              </div>
+              <span>Приставки</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <div class="svg-home">
+                <svg>
+                  <use xlink:href="./img/sprite.svg#category-home" />
+                </svg>
+              </div>
+              <span>Для дома</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <div class="svg-TV">
+                <svg><use xlink:href="./img/sprite.svg#TV" /></svg>
+              </div>
+              <span>Телевизоры</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <div class="svg-accessories">
+                <svg>
+                  <use xlink:href="./img/sprite.svg#accessories" />
+                </svg>
+              </div>
+              <span>Аксессуары</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </header>

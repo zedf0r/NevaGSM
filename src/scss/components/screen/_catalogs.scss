@@ -1,0 +1,322 @@
+.catalogs {
+    font-family: var(--font-family);
+}
+
+.catalogs-wrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+
+    h3 {
+        font-weight: 700;
+        font-size: 38px;
+    }
+}
+
+.mobile-mark {
+    display: flex;
+    column-gap: 20px;
+    div {
+        background-color: #f3f4fb;
+        flex: 0 1 200px;
+        max-width: 200px;
+        padding: 22px 15px;
+        border-radius: 14px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    img {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+
+    span {
+        font-weight: 500;
+        font-size: 14px;
+        color: var(--color-black)
+    }
+}
+
+.mark-apple {
+    img {
+        right: -12px;
+    }
+}
+
+.mark-samsung {
+    img {
+        right: -10px;
+    }
+}
+
+.mark-xiaomi {
+    img {
+        right: -15px;
+    }
+}
+
+.mark-honor {
+    img {
+        right: -10px;
+    }
+}
+
+.mark-push_buttons {
+    img {
+        right: -15px;
+    }
+}
+
+.catalog {
+    display: flex;
+    column-gap: 25px;
+    color: #1b1915;
+}
+
+.catalog-sidebar {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    flex: 0 1 295px;
+    max-width: 295px;
+    background-color: #f6f7fb;
+    border-radius: 12px;
+    padding: 30px 20px;
+    height: 887px;
+}
+
+.sidebar-price {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.sidebar-text {
+    display: flex;
+    justify-content: space-between;
+    span {
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    div {
+        width: 14px;
+        height: 8px;
+    }
+}
+
+.sidebar_price-input {
+    display: flex;
+    column-gap: 10px;
+
+    input {
+        width: calc(50% - 5px);
+        border: 1px solid #fafafa;
+        border-radius: 6px;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+.sidebar-brand {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--color-white);
+        padding: 10px;
+        border-radius: 6px;
+
+        span {
+            font-size: 14px;
+            font-weight: 400;
+            &:last-child {
+                color: #b3b3b3;
+            }
+        }
+    }
+
+    .active {
+        background-color: var(--color-black);
+        span {
+            color: var(--color-white);
+            &:last-child {
+                color: var(--color-white);
+            }
+        }
+    }
+}
+
+.sidebar-screen {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.screen-diagonal {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    label {
+        background-color: var(--color-white);
+        padding: 10px;
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        input {
+            width: 16px;
+            height: 16px;
+            background-color: #d7d9e0;
+
+            &:checked {
+                background-color: var(--color-black);
+                background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zLjc1MDAzIDUuMzMzMjdMMS4yNSAyLjY2NjY0TDAgMy45OTk5NkwzLjc1MDAzIDhMMTAgMS4zMzMzM0w4Ljc1MDAxIDBMMy43NTAwMyA1LjMzMzI3WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==");
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+
+            }
+        }
+    }
+}
+
+
+.sidebar-stock {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-avail {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    label {
+        background-color: var(--color-white);
+        padding: 10px;
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        input {
+            width: 16px;
+            height: 16px;
+            background-color: #d7d9e0;
+
+            &:checked {
+                background-color: var(--color-black);
+                background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zLjc1MDAzIDUuMzMzMjdMMS4yNSAyLjY2NjY0TDAgMy45OTk5NkwzLjc1MDAzIDhMMTAgMS4zMzMzM0w4Ljc1MDAxIDBMMy43NTAwMyA1LjMzMzI3WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==");
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+
+            }
+        }
+    }
+}
+
+.catalog-smartphone {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    flex: 0 1 970px;
+    max-width: 970px;
+}
+
+.catalog-filters {
+    display: flex;
+    justify-content: space-between;
+
+    select {
+        border: 1px solid var(--color-black);
+        border-radius: 8px;
+        padding: 10px 15px;
+        flex: 0 1 255px;
+        max-width: 255px;
+
+        &::after {
+            display: block;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+    }
+}
+
+.catalog_filters-brand {
+    display: flex;
+    border: 1px solid #abb0c0;
+    column-gap: 10px;
+    border-radius: 8px;
+    padding: 10px 15px;
+    background-color: #f5f6fa;
+    span {
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--color-black);
+    }
+
+    div {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+.catalogfilters {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog_filters-price {
+    border: 1px solid var(--color-black);
+    border-radius: 8px;
+    padding: 10px 15px;
+    flex: 0 1 255px;
+    max-width: 255px;
+    display: flex;
+    justify-content: space-between;
+    span {
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--color-black);
+    }
+
+    div {
+        width: 14px;
+        height: 8px;
+        color: var(--color-black);
+    }
+}
+
+.catalog-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}

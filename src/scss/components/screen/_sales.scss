@@ -10,7 +10,11 @@
     border-radius: 12px;
     transition: .7s;
     height: 534px;
+    flex: 0 0 310px;
+    padding-left: 25px;
+    max-width: 310px;
 }
+
 
 .sales-wrapper {
     display: flex;
@@ -31,12 +35,6 @@
 .hover-trigger {
     flex: 1;
     pointer-events: all;
-} 
-
-.sales-slide {
-    flex: 0 0 360px;
-    padding-left: 25px;
-    max-width: 360px;
 }
 
 .information_sales-img {
@@ -46,7 +44,7 @@
 .sales-information {
     position: absolute;
     bottom: 65px;
-    left: 15px;
+    left: 17px;
     display: flex;
     column-gap: 12px;
     width: 100%;
@@ -198,4 +196,11 @@
 
 .button_cart-svg, .sales-button {
     transition: .8s;
+}
+
+.product-slider {
+    img {
+        width: 260px;
+        height: 320px;
+    }
 }

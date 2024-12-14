@@ -1,0 +1,35 @@
+.breadcrumbs {
+    background-color: #f4f4f4;
+    font-family: var(--font-family);
+}
+
+.crumbs {
+    ul {
+        display: flex;
+        column-gap: 24px;
+        li {
+            font-size: 13px;
+            font-weight: 300;
+            color: #b3b3b3;
+            position: relative;
+
+            &:first-child::after {
+                display: none;
+            }
+
+            &::after {
+                display: block;
+                content: "/";
+                position: absolute;
+                top: 0;
+                left: -12px;
+                z-index: 1;
+                font-size: 13px;
+            }
+
+            &:last-child {
+                color: var(--color-black);
+            }
+        }
+    }
+}

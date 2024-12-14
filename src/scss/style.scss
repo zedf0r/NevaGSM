@@ -6,9 +6,7 @@
 @use "./components/layout/home" as *;
 
 // Template
-@use "./components/template/header" as *;
-@use "./components/template/main" as *;
-@use "./components/template/footer" as *;
+@use "./components/template/breadcrumbs" as *;
 
 //Screen
 @use "./components/screen/head_specials" as *;
@@ -16,6 +14,7 @@
 @use "./components/screen/categories" as *;
 @use "./components/screen/specials" as *;
 @use "./components/screen/sales" as *;
+@use "./components/screen/catalogs" as *;
 
 // Components
 @use "./components/container" as *;

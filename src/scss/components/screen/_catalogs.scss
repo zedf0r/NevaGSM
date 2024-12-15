@@ -1,5 +1,9 @@
 .catalogs {
     font-family: var(--font-family);
+
+    .container {
+        padding-bottom: 80px;
+    }
 }
 
 .catalogs-wrap {
@@ -318,7 +322,7 @@
 .catalog-container {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 20px;
+    column-gap: 12px;
 }
 
 .arrow-top {

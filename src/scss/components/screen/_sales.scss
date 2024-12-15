@@ -10,9 +10,14 @@
     padding: 25px 25px 15px;
     border-radius: 12px;
     transition: .7s;
-    flex: 0 0 310px;
-    padding-left: 25px;
     max-width: 310px;
+
+    &:hover {
+        box-shadow: 0 20px 16px 15px rgba(79, 82, 101, 0.15);
+        .hidden {
+            opacity: 1;
+        }
+    }
 }
 
 
@@ -43,7 +48,7 @@
 
 .sales-information {
     position: absolute;
-    bottom: 65px;
+    bottom: 87px;
     left: 17px;
     display: flex;
     column-gap: 12px;
@@ -99,6 +104,7 @@
 
 .information_sales-text {
     text-align: center;
+    padding-top: 10px;
     span {
         font-weight: 400;
         font-size: 18px;
@@ -184,14 +190,7 @@
     transition: .5s;
 }
 
-.sales-slide:hover {
-    .slide-information {
-        box-shadow: 0 20px 16px 15px rgba(79, 82, 101, 0.15);
-    }
-    .hidden {
-        opacity: 1;
-    }
-}
+
 
 .button_cart-svg, .sales-button {
     transition: .8s;
@@ -201,5 +200,9 @@
     img {
         width: 260px;
         height: 320px;
+    }
+
+    .swiper-slide {
+        padding-bottom: 10px;
     }
 }

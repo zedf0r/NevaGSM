@@ -63,21 +63,22 @@
                         </div>
                     </div>
 
-                    <div class="card-image-thumbs">
-                        <div>
-                            <img src="./img/Product/iphonemain.png" alt="Айфон с лицевой части" class="active"/>
+                    <div thumbsSlider="" class="swiper" id="mySwiper">
+                        <div class="swiper-wrapper card-image-thumbs">
+                          <div class="swiper-slide">
+                            <img src="./img/Product/iphonemain.png" alt="Айфон с лицевой части"  />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./img/Product/iphonetop.png" alt="Айфон с верхней части" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./img/Product/iphonebottom.png" alt="Айфон с нижней части" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./img/Product/iphonemodels.png" alt="Цвета айфонов" />
+                          </div>
                         </div>
-                        <div>
-                            <img src="./img/Product/iphonetop.png" alt="Айфон с верхней части"/>
-                        </div>
-                        <div>
-                            <img src="./img/Product/iphonebottom.png" alt="Айфон с нижней части"/>
-                        </div>
-                        <div>
-                            <img src="./img/Product/iphonemodels.png" alt="Цвета айфонов"/>
-                        </div>
-                        
-                    </div>
+                      </div>
                 </div>
                 <div class="card-info">
                     <div class="card-info-gap">
@@ -243,11 +244,8 @@
                     <div class="product-information-head">
                         <h2>Описание товара</h2>
                         <div class="information-circle">
-                            <div>
-                                <svg>
-                                    <use xlink:href="./img/sprite.svg#minus" />
-                                </svg>
-                            </div>
+                            <div class="svg-minus"></div>
+                            <div class="svg-minus"></div>
                         </div>
                     </div>
                     <div class="description description-hide">
@@ -284,11 +282,8 @@
                         <div class="product-information-head">
                             <h2>Характеристики</h2>
                             <div class="information-circle">
-                                <div>
-                                    <svg>
-                                        <use xlink:href="./img/sprite.svg#minus" />
-                                    </svg>
-                                </div>
+                                <div class="svg-minus"></div>
+                                <div class="svg-minus"></div>
                             </div>
                         </div>
                         <div class="description">
@@ -324,10 +319,9 @@
                         <div class="product-information-head">
                             <h2>Доставка и оплата</h2>
                             <div class="information-circle">
-                                <div>
-                                    <svg>
-                                        <use xlink:href="./img/sprite.svg#minus" />
-                                    </svg>
+                                <div class="information-circle">
+                                    <div class="svg-minus"></div>
+                                    <div class="svg-minus"></div>
                                 </div>
                             </div>
                         </div>
@@ -910,7 +904,7 @@
             <div class="offers_wrap">
                 <div class="section_head-text">
                     <div>
-                        <h3>Похожие товары</h3>
+                        <h3>С этим товаром также покупают</h3>
                     </div>
                 </div>
             </div>

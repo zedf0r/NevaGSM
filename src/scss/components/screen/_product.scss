@@ -71,6 +71,7 @@
     flex-direction: column;
     row-gap: 25px;
     flex: 0 0 585px;
+    max-width: 585px;
 }
 
 .product-swiper {
@@ -84,9 +85,9 @@
 
 .card-image-thumbs {
     display: flex;
-    column-gap: 20px;
     div {
-        width: 84px;
+        flex: 0 0 84px;
+        max-width: 84px;
     }
 }
 
@@ -214,7 +215,8 @@
         text-align: center;
         border-radius: 6px;
         box-shadow: 0 6px 30px 2px rgba(36, 43, 61, 0.1);
-
+        max-width: 82px;
+        transition: .4s;
         span {
             color: var(--color-black);
             text-transform: uppercase;
@@ -349,6 +351,7 @@
 .card-info-buttons {
     display: flex;
     justify-content: space-between;
+    column-gap: 28px;
 }
 
 
@@ -367,7 +370,8 @@
     display: flex;
     background-color: var(--bg-color-blue);
     padding: 20px 25px;
-    flex: 0 1 610px;
+    flex: 1 0;
+    max-width: 100%;
     border-radius: 12px;
     align-items: center;
     justify-content: center;
@@ -456,6 +460,7 @@
         height: 27px;
         position: relative;
         z-index: 0;
+        cursor: pointer;
 
         &::before {
             display: block;
@@ -495,6 +500,12 @@
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+    opacity: 1;
+    transition: 1s;
+}
+
+.description-hide {
+    display: none;
 }
 
 .product-information-description {
@@ -523,11 +534,21 @@
     height: 36px;
     display: flex;
     justify-content: center;
-    padding-top: 6px;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
 
-    div {
+    .svg-minus {
+        transition: .4s;
         width: 22px;
         height: 3px;
+        background-color: var(--color-black);
+        border-radius: 50px;
+        position: absolute;
+    }
+
+    .svg-plus {
+        transform: rotate(90deg);
     }
 }
 
@@ -565,10 +586,6 @@
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-}
-
-.description-hide {
-    display: none;
 }
 
 .product-information-second {

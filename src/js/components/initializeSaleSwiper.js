@@ -1,22 +1,4 @@
 export function initializeSalesSwiper(swiperId) {
-	const saleSwiper = new Swiper(swiperId, {
-		spaceBetween: 20,
-		breakpoints: {
-			390: {
-				slidesPerView: 1,
-			},
-			770: {
-				slidesPerView: 2,
-			},
-			1200: {
-				slidesPerView: 3,
-			},
-			1700: {
-				slidesPerView: 3.3,
-			}
-		}
-	});
-
 	const products = document.querySelectorAll(`${swiperId} .sales-slide`);
 
 	if (products.length > 0) {

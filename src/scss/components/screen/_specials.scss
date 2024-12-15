@@ -73,7 +73,6 @@
 }
 
 .offer-slide {
-    flex: 0 0 420px;
     height: 610px;
     overflow: hidden;
     padding: 50px 20px 0 40px;
@@ -140,7 +139,6 @@
     right: -80px;
 }
 
-
 @media (max-width: 800px) {
     .desktop-link-hidden {
         display: none;
@@ -164,9 +162,5 @@
         span {
             font-size: 26px;
         }  
-    }
-
-    .offer-slide {
-        flex: 0 0 360px;
     }
 }

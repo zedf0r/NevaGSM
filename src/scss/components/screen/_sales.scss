@@ -6,10 +6,10 @@
 }
 
 .slide-information {
+    display: block;
     padding: 25px 25px 15px;
     border-radius: 12px;
     transition: .7s;
-    height: 534px;
     flex: 0 0 310px;
     padding-left: 25px;
     max-width: 310px;
@@ -89,7 +89,6 @@
     background-color: #28cb33;
     padding: 3px 13px;
     border-radius: 50px;
-    text-align: center;
     span {
         color: var(--color-white);
         font-size: 14px;

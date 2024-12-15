@@ -320,3 +320,24 @@
     flex-wrap: wrap;
     column-gap: 20px;
 }
+
+.arrow-top {
+    transform: rotate(-90deg);
+    align-self: center;
+}
+
+.filtres-hide {
+    display: none;
+}
+
+.filters {
+    .sidebar-text {
+        cursor: pointer;
+    }
+
+    .filter {
+        div {
+            cursor: pointer;
+        }
+    }
+}

@@ -30,7 +30,7 @@
 			</div>
 			<div class="catalog">
 				<div class="catalog-sidebar">
-					<div class="sidebar-price">
+					<div class="filters sidebar-price">
 						<div class="sidebar-text">
 							<span>Цена</span>
 							<div>
@@ -39,15 +39,17 @@
 								</svg>
 							</div>
 						</div>
-						<div class="sidebar_price-range">
-							<div class="sidebar-range"></div>
-						</div>
-						<div class="sidebar_price-input">
-							<input type="text" placeholder="от 0 ₽" />
-							<input type="text" placeholder="до 388 589₽" />
-						</div>
+                        <div class="filter">
+                            <div class="sidebar_price-range">
+                                <div class="sidebar-range"></div>
+                            </div>
+                            <div class="sidebar_price-input">
+                                <input type="text" placeholder="от 0 ₽" />
+                                <input type="text" placeholder="до 388 589₽" />
+                            </div>
+                        </div>
 					</div>
-					<div class="sidebar-brand">
+					<div class="filters sidebar-brand">
 						<div class="sidebar-text">
 							<span>Бренд</span>
 							<div>
@@ -56,7 +58,7 @@
 								</svg>
 							</div>
 						</div>
-						<div class="brand">
+						<div class="filter brand filter-active">
 							<div>
 								<span>Бренд 1</span>
 								<span>(56)</span>
@@ -75,7 +77,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="sidebar-screen">
+					<div class="filters sidebar-screen">
 						<div class="sidebar-text">
 							<span>Диагональ экрана</span>
 							<div>
@@ -84,7 +86,7 @@
 								</svg>
 							</div>
 						</div>
-						<div class="screen-diagonal">
+						<div class="filter screen-diagonal">
 							<label for="four-five">
 								<span>4”-5”</span>
 								<input type="checkbox" id="four-five" name="check" />
@@ -103,7 +105,7 @@
 							</label>
 						</div>
 					</div>
-					<div class="sidebar-stock">
+					<div class="filters sidebar-stock">
 						<div class="sidebar-text">
 							<span>Наличие</span>
 							<div>
@@ -112,7 +114,7 @@
 								</svg>
 							</div>
 						</div>
-						<div class="product-avail">
+						<div class="filter product-avail">
 							<label for="all-products">
 								<span>Все товары</span>
 								<input type="checkbox" id="all-products" name="check" />

@@ -1,11 +1,17 @@
 import { isWebp } from "./components/webp.js"
 import { hideFavoriteInformation } from "./components/sales_hide.js"
+import { filtresHide, filterActive } from "./components/catalogs.js"
+import { productSizeActive } from "./components/product.js"
+import { productButtonCount} from "./components/productButton.js"
+import { descriptionHide } from "./components/descriptionHide.js"
+import { initializeSalesSwiper } from "./components/initializeSaleSwiper.js"
 
 document.addEventListener("DOMContentLoaded", function () {
 	const headerSwiper = document.querySelector("#header-swiper")
 	const offerSwiper = document.querySelector("#offer-swiper")
 	const salesSwiper = document.querySelector("#sales-swiper")
 	const categoriesSwiper = document.querySelector("#categories-swiper");
+	const productSwiper = document.querySelector("#product-swiper");
 	if (headerSwiper) {
 		const headSwiper = new Swiper("#header-swiper", {
 			loop: true,
@@ -62,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
 								el: ".product-slider .swiper-scrollbar",
 							}
 						})
-
+						
 						slides.forEach((slide, index) => {
 							const hoverTrigger = document.createElement("div")
 							hoverTrigger.classList.add("hover-trigger")
@@ -158,6 +164,26 @@ document.addEventListener("DOMContentLoaded", function () {
 		})
 	}
 
+	if (productSwiper) {
+		const productSlider = new Swiper("#product-swiper", {
+			loop: true,
+			slidesPerView: 1,
+
+			navigation: {
+				nextEl: ".product-button-next",
+				prevEl: ".product-button-prev",
+			},
+		})
+	}
+
+
 	isWebp();
 	hideFavoriteInformation();
+	filtresHide();
+	filterActive();
+	productSizeActive();
+	productButtonCount();
+	descriptionHide();
+	initializeSalesSwiper("#sales-swiper-1");
+	initializeSalesSwiper("#sales-swiper-2");
 })

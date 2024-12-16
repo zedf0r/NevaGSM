@@ -6,6 +6,7 @@ import { productButtonCount} from "./components/productButton.js"
 import { descriptionHide } from "./components/descriptionHide.js"
 import { initializeSalesSwiper } from "./components/initializeSaleSwiper.js"
 import { colorButtons } from "./components/colorButton.js"
+import { salesButton } from "./components/salesButton.js"
 
 document.addEventListener("DOMContentLoaded", function () {
 	const headerSwiper = document.querySelector("#header-swiper")
@@ -166,6 +167,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	productButtonCount();
 	descriptionHide();
 	colorButtons();
+	salesButton();
 	const productSwiper1 = new initializeSalesSwiper("#sales-swiper-1");
 	const productSwiper2 = new initializeSalesSwiper("#sales-swiper-2");
 	const productSwiper3 = new initializeSalesSwiper("#sales-swiper-3");

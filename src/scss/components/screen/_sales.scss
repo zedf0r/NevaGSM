@@ -11,6 +11,7 @@
     border-radius: 12px;
     transition: .7s;
     max-width: 310px;
+    cursor: pointer;
 
     &:hover {
         box-shadow: 0 20px 16px 15px rgba(79, 82, 101, 0.15);
@@ -42,14 +43,10 @@
     pointer-events: all;
 }
 
-.information_sales-img {
-    position: relative;
-}
-
 .sales-information {
     position: absolute;
-    bottom: 87px;
-    left: 17px;
+    bottom: 35px;
+    left: 16px;
     display: flex;
     column-gap: 12px;
     width: 100%;
@@ -197,6 +194,7 @@
 }
 
 .product-slider {
+    position: relative;
     img {
         width: 260px;
         height: 320px;

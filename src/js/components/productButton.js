@@ -15,7 +15,7 @@ export function productButtonCount() {
             if (isActive) {
                 return;
             }
-            productButton.classList.add('cart-button_active')
+            productButton.classList.add('active')
             svgButton.classList.add('svg-hide')
             productButtonText.textContent = 1;
             productButtonPrev.classList.remove('cart-button-hide');
@@ -32,7 +32,7 @@ export function productButtonCount() {
                 productButtonNext.classList.add('cart-button-hide');
                 productButtonText.textContent = "в корзину";
                 svgButton.classList.remove('svg-hide')
-                productButton.classList.remove('cart-button_active')
+                productButton.classList.remove('active')
                 isActive = false;
             }
         })

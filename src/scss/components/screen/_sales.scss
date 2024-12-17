@@ -12,7 +12,6 @@
     transition: .7s;
     max-width: 310px;
     cursor: pointer;
-
     &:hover {
         box-shadow: 0 20px 16px 15px rgba(79, 82, 101, 0.15);
         .hidden {
@@ -21,6 +20,15 @@
     }
 }
 
+.sales-container {
+    .slide-information {
+        max-width: none;
+
+        .product-slider {
+            margin-left: 26px;
+        }
+    }
+}
 
 .sales-wrapper {
     display: flex;

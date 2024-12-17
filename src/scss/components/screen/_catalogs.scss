@@ -28,6 +28,7 @@
         border-radius: 14px;
         position: relative;
         overflow: hidden;
+        cursor: pointer;
     }
 
     img {
@@ -272,6 +273,7 @@
             z-index: 1;
         }
     }
+
 }
 
 .catalog_filters-brand {
@@ -281,6 +283,10 @@
     border-radius: 8px;
     padding: 10px 15px;
     background-color: #f5f6fa;
+
+    svg {
+        cursor: pointer;
+    }
     span {
         font-weight: 400;
         font-size: 14px;
@@ -306,6 +312,7 @@
     max-width: 255px;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
     span {
         font-weight: 400;
         font-size: 14px;

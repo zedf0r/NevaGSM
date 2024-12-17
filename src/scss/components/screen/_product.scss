@@ -699,6 +699,13 @@
 .product-slider-simillar {
     background-color: #f5f7fa;
     padding-top: 65px;
+    .slide-information {
+            max-width: none;
+    
+        .product-slider {
+            margin-left: 26px;
+        }
+    }
 }
 
 .product-slider {
@@ -707,6 +714,14 @@
 
 .product-slider-take {
     padding-top: 65px;
+    
+    .slide-information {
+        max-width: none;
+
+    .product-slider {
+        margin-left: 26px;
+    }
+}
 }
 
 @media (max-width: 1200px) {

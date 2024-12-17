@@ -150,7 +150,8 @@
 .card-colors {
     display: flex;
     column-gap: 20px;
-
+    flex-wrap: wrap;
+    row-gap: 15px;
     .active {
         border: 1px solid var(--bg-color-blue);
     }
@@ -210,7 +211,8 @@
 .memory-sizes {
     display: flex;
     column-gap: 20px;
-
+    row-gap: 15px;
+    flex-wrap: wrap;
     div {
         flex: 0 0 82px;
         padding: 16px 10px;
@@ -244,7 +246,8 @@
 .avail {
     display: flex;
     column-gap: 20px;
-
+    row-gap: 15px;
+    flex-wrap: wrap;
     div {
         padding: 13px 16px;
         text-align: center;
@@ -716,20 +719,10 @@
         .swiper-slide {
             img {
                 max-width: 446px;
-                margin-left: 23px;
+                margin-left: 0;
                 width: 100%;
             }
         }
-    }
-
-    .memory-sizes {
-        row-gap: 15px;
-        flex-wrap: wrap;
-    }
-
-    .avail {
-        row-gap: 15px;
-        flex-wrap: wrap;
     }
 }
 
@@ -753,11 +746,6 @@
         display: flex;
         flex-direction: column;
         row-gap: 5px;
-    }
-
-    .card-colors {
-        flex-wrap: wrap;
-        row-gap: 15px;
     }
 
     .product-information-second {

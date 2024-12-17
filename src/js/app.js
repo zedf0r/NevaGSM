@@ -118,8 +118,14 @@ document.addEventListener("DOMContentLoaded", function () {
 	if (productSwiperImage) {
 		const swiperImage = new Swiper("#mySwiper", {
 			spaceBetween: 10,
-			slidesPerView: 4,
-			watchSlidesProgress: true,
+			breakpoints: {
+				320: {
+					slidesPerView: 2,
+				}, 
+				460: {
+					slidesPerView: 4,
+				}
+			}
 		})
 
 		if (productSwiper) {

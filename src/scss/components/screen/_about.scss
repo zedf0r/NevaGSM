@@ -1,0 +1,54 @@
+.about {
+    font-family: var(--font-family);
+
+    .container {
+        padding: 40px 0 80px;
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 38px;
+    }
+    p {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+.about-store {
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+}
+
+.about-store-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.about-store-details {
+    display: flex;
+    column-gap: 20px;
+}
+
+.about-store-details-text {
+    flex: 0 1 640px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    a {
+        font-weight: 500;
+        text-decoration: underline;
+        color: var(--bg-color-blue);
+    }
+
+    .bold {
+        padding: 25px;
+        border-radius: 12px;
+        font-weight: 600;
+        background-color: #fafafa;
+    }
+}

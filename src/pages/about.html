@@ -11,8 +11,15 @@
 	@@include("../components/shared/header.html")
 
 	<main>
-		@@include("../components/shared/breadcrumbs/breadcrumbsAbout.html")
-		@@include("../components/screen/about/about-store.html")
+		@@include("../components/shared/breadcrumbs.html", {
+			"breadcrumbs": [
+				{ "link": "./index.html", "title": "Главная" },
+				{ "link": "#", "title": "Страница 2" },
+				{ "link": "#", "title": "Страница 3" }
+			]
+		})
+		@@include("../components/screen/catalog/catalogs.html")
+		@@include("../components/screen/main/specials.html")
 	</main>
 
 	@@include("../components/shared/footer.html")

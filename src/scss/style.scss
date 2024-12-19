@@ -17,6 +17,8 @@
 @use "./components/screen/catalogs" as *;
 @use "./components/screen/product" as *;
 @use "./components/screen/deliveries" as *;
+@use "./components/screen/warranty" as *;
+@use "./components/screen/tradeIn" as *;
 
 // Components
 @use "./components/container" as *;

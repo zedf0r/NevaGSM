@@ -1,0 +1,93 @@
+.trade-in {
+    font-family: var(--font-family);
+    
+    h1 {
+        font-weight: 700;
+        font-size: 38px;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    span {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    h2 {
+        font-weight: 500;
+        font-size: 24px;
+    }
+}
+
+.trade-in-info {
+    position: relative;
+    padding: 70px 0;
+    background-color: var(--color-white);
+}
+
+.trade-in-description {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    width: 45%;
+    div {
+        position: absolute;
+        width: 440px;
+    }
+
+    a {
+        color: var(--bg-color-blue)
+    }
+
+    .trade-in-img-first {
+        top: 0;
+        left: 40%;
+    }
+
+    .trade-in-img-last {
+        bottom: -2px;
+        left: 65%;
+    }
+}
+
+.trade-in-details {
+    background-color: #f6f7fb;
+    padding: 60px 0 42px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .bold {
+        font-weight: 600;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul {
+        line-height: 28px;
+        li {
+            font-weight: 300;
+            font-size: 20px;
+            position: relative;
+            padding-left: 15px;
+            &::before {
+                display: block;
+                content: "–";
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+        }
+    }
+}

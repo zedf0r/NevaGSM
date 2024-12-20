@@ -555,7 +555,7 @@
     align-items: center;
     position: relative;
     cursor: pointer;
-
+    transition: .4s;
     .svg-minus {
         transition: .4s;
         width: 22px;
@@ -567,6 +567,14 @@
 
     .svg-plus {
         transform: rotate(90deg);
+    }
+}
+
+.information-circle-bg {
+    background-color: var(--color-almost-black);
+
+    .svg-minus, .svg-plus {
+        background-color: var(--color-white);
     }
 }
 

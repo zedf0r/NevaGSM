@@ -5,9 +5,6 @@
 // Layout
 @use "./components/layout/home" as *;
 
-// Template
-@use "./components/template/breadcrumbs" as *;
-
 //Screen
 @use "./components/screen/head_specials" as *;
 @use "./components/screen/new_gadget" as *;
@@ -22,6 +19,7 @@
 @use "./components/screen/credit" as *;
 @use "./components/screen/about" as *;
 @use "./components/screen/contacts" as *;
+@use "./components/screen/shopping-cart" as *;
 
 // Components
 @use "./components/container" as *;

@@ -1,0 +1,154 @@
+<section class="shopping-cart">
+	<div class="container">
+		<div class="cart-process">
+			<div class="cart-process-text">
+				<h2 class="cart-process-button cart-text active">Корзина</h2>
+				<h2 class="cart-process-button cart-order-text" >Оформление заказа</h2>
+				<h2 class="cart-process-button" >Заказ оформлен</h2>
+			</div>
+			<div class="cart-process-item">
+				<div class="cart-process-item-view">
+					<div class="item-info">
+						<div class="item-info-head">
+							<p>Товар</p>
+							<p>Модель</p>
+							<p class="product-price-text">Цена за ед.</p>
+							<p class="product-button-text">Кол-во</p>
+							<p class="product-total-price-text">Всего</p>
+							<div></div>
+						</div>
+						<div class="item-info-product">
+							<div class="product-about">
+								<div><img src="./img/product-cart/iphone.png" alt="Айфон" /></div>
+								<span>Apple iPhone 16 Pro Max 256 ГБ, <br />«песчаный титановый»</span>
+							</div>
+							<div class="product-color">
+								<span>Black</span>
+							</div>
+							<div class="product-price">
+								<span>188 500.00 ₽</span>
+							</div>
+							<div class="product-button">
+								<div class="product-button-minus">
+									<svg>
+										<use xlink:href="./img/sprite.svg#minus" />
+									</svg>
+								</div>
+								<span class="product-button-count">1</span>
+								<div class="product-button-plus">
+									<svg>
+										<use xlink:href="./img/sprite.svg#plus" />
+									</svg>
+								</div>
+							</div>
+							<div class="product-total-price">
+								<span>188 500.00 ₽</span>
+							</div>
+							<div class="product-delete">
+								<span>Удалить</span>
+							</div>
+						</div>
+					</div>
+					<div class="item-total">
+						<span>Итого</span>
+						<span>188 500.00 ₽</span>
+					</div>
+				</div>
+				<div class="cart-procces-item-buttons">
+					<a href="./catalogs.html"> Вернуться к покупкам </a>
+					<div class="button-to-order">
+						<span>Перейти к оформлению</span>
+					</div>
+				</div>
+			</div>
+			<div class="cart-order cart-hidden">
+                <div class="cart-order-box">
+                    <div class="cart-order-contact-information">
+                        <h3>Контактные данные</h3>
+                        <form id="contact-information">
+                            <div>
+                                <label for="first-name"> Имя </label>
+                                <input type="text" placeholder="Введите имя" id="first-name" />
+                            </div>
+                            <div>
+                                <label for="telephone-number"> Телефон </label>
+                                <input type="text" placeholder="+7" id="telephone-number" />
+                            </div>
+                            <div>
+                                <label for="email"> Email </label>
+                                <input type="text" placeholder="Электронная почта" id="email" />
+                            </div>
+                            <div>
+                                <label for="address"> Адрес доставки </label>
+                                <input type="text" placeholder="Куда доставить" id="address" />
+                            </div>
+                            <div>
+                                <label for="note"> Примечание к заказу </label>
+                                <input type="text" placeholder="Пожелания к вашему заказу" id="note" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="cart-order-delivery">
+                        <div class="order-delivery-info">
+                            <h3>Доставка</h3>
+                            <div class="delivery-info-radio">
+                                <label for="delivery1">
+                                    <input type="radio" name="delivery" id="delivery1">
+                                    <span>Самовывоз</span>
+                                </label>
+                                <label for="delivery2">
+                                    <input type="radio" name="delivery" id="delivery2">
+                                    <span>Курьером по москве</span>
+                                </label>
+                                <label for="delivery3">
+                                    <input type="radio" name="delivery" id="delivery3">
+                                    <span>Транспортная компания</span>
+                                </label>
+                            </div>
+                            <div class="delivery-info-section">
+                                <span>Выберите пункт выдачи</span>
+                                <div>
+                                    <svg>
+                                        <use xlink:href="./img/sprite.svg#arrow-bottom" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delivery-info-total-price">
+                            <div class="total-price-text">
+                                <p>Итого с учётом доставки</p>
+                                <span>188 500₽</span>
+                            </div>
+                            <div class="delivery-info-total-price-radio">
+                                <label for="delivery-price1">
+                                    <input type="radio" name="delivery-price" id="delivery-price1">
+                                    <span>Оплата переводом на карту</span>
+                                </label>
+                                <label for="delivery-price2">
+                                    <input type="radio" name="delivery-price" id="delivery-price2">
+                                    <span>Наложенным платежом</span>
+                                </label>
+                                <label for="delivery-price3">
+                                    <input type="radio" name="delivery-price" id="delivery-price3">
+                                    <span>Наличными</span>
+                                </label>
+                                <label for="delivery-price4">
+                                    <input type="radio" name="delivery-price" id="delivery-price4">
+                                    <span>Безналичный расчёт</span>
+                                </label>
+                            </div>
+                            <button form="contact-information" type="submit">оформить заказ</button>
+                        </div>
+                    </div>
+                </div>
+				<p>
+					Скидка постоянного покупателя привязана к конкретному личному кабинету (ЛК), т.к. рассчитывается на
+					основе покупок, сделанных черезнего. В случае повторной регистрации на сайте, история покупок и
+					скидка постоянного покупателя не переносятся из старого ЛК в новый. <br/>Вы можете пользоваться скидкой
+					только через тот ЛК, в котором она сформирована.
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</section>

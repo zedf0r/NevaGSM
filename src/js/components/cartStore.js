@@ -43,7 +43,6 @@ export function deleteCart() {
     if (deleteCarts) {
         deleteCarts.forEach(deleteCart => {
             deleteCart.addEventListener('click', () => {
-                const carts = document.querySelectorAll('.item-info')
 
                 const cartToDelete = deleteCart.closest('.item-info');
 

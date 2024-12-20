@@ -329,8 +329,11 @@
     .mobile_navbar-icon {
         display: flex;
         column-gap: 30px;
-
+        button {
+            background-color: inherit;
+        }
         div {
+            background-color: none;
             width: 20px;
             height: 20px;
         }

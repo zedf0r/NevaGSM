@@ -153,7 +153,16 @@ document.addEventListener("DOMContentLoaded", function () {
 				390: {
 					slidesPerView: 1,
 				},
-				770: {
+				420: {
+					slidesPerView: 1.1,
+				},
+				460: {
+					slidesPerView: 1.3,
+				},
+				530: {
+					slidesPerView: 1.5,	
+				},
+				700: {
 					slidesPerView: 2,
 				},
 				1200: {
